@@ -1,15 +1,15 @@
-# Resistor AI Chat Completion Oracle
+# FaceBlock AI Chat Completion Oracle
 
-https://resistorai.org
+https://FaceBlock.io
 
-This project connects to the Resistor AI custom EVM blockchain, listens for chat completion requests, uses OpenAI's ChatGPT to generate responses, and then submits those responses back to the blockchain.
+This project connects to the FaceBlock AI custom EVM blockchain, listens for chat completion requests, uses OpenAI's ChatGPT to generate responses, and then submits those responses back to the blockchain.
 
 ## Prerequisites
 
 - Node.js (v18 or higher) https://nodejs.org/en/download
 - npm (comes with Node.js)
 - An OpenAI API key
-- A Resistor AI wallet with some TOR to deploy the Oracle contract.
+- A FaceBlock AI wallet with some TOR to deploy the Oracle contract.
 - A ChatCompletion contract with the address above set as Oracle
 
 ## Setup
@@ -19,7 +19,7 @@ Make sure you have installed Node.js, npm and gathered all the items above.
 Now, clone the repository and install the dependencies:
 
 ```
-git clone https://github.com/resistorai/chat-completion-oracle.git
+git clone https://github.com/FaceBlockai/chat-completion-oracle.git
 cd chat-completion-oracle
 npm install
 ```
@@ -35,7 +35,7 @@ npm install
 
 Run the following command
 ```
-npx hardhat run scripts/deploy.ts --network resistor-testnet
+npx hardhat run scripts/deploy.ts --network FaceBlock-testnet
 ```
 
 This will deploy and verify your contract.
@@ -43,22 +43,22 @@ Save the contract address displayed on your terminal and go to the Oracle Config
 
 ### Deploying the Oracle Smart contract without Hardhat (Harder)
 
-1. Configure your wallet (Metamask or similar) with Resistor AI Testnet configuration:
+1. Configure your wallet (Metamask or similar) with FaceBlock AI Testnet configuration:
 ```
-Network Name: Resistor AI Testnet
-RPC Url: https://rpc-testnet.resistorai.org
+Network Name: FaceBlock AI Testnet
+RPC Url: https://rpc-testnet.FaceBlockai.org
 Chain ID: 949888
 Currency symbol: TOR
-Block explorer URL: https://scan-testnet.resistorai.org
+Block explorer URL: https://scan-testnet.FaceBlockai.org
 ```
 
 2. Go to your favorite tool to deploy smart contracts such as https://remix.ethereum.org/
 
-3. Make sure you're on Resistor AI
+3. Make sure you're on FaceBlock AI
 
 4. Deploy the contract located in chat-completion-oracle/contracts/ChatCompletion.sol
 
-5. Verify it on https://scan-testnet.resistorai.org
+5. Verify it on https://scan-testnet.FaceBlockai.org
 
 ## Oracle Configuration
 
@@ -82,7 +82,7 @@ OPENAI_API_KEY=your_openai_api_key_here
 
 ## Running your Oracle
 
-Run the following command on your terminal, and you will start mining Chat Completion requests on Resistor
+Run the following command on your terminal, and you will start mining Chat Completion requests on FaceBlock
 
 ```
 ts-node index.ts
@@ -91,7 +91,7 @@ ts-node index.ts
 ## Testing
 
 To test your oracle, a Chat Completion request must be made on your smart contract.
-You can either interact with the requestCompletion method directly on https://scan-testnet.resistorai.org
+You can either interact with the requestCompletion method directly on https://scan-testnet.FaceBlockai.org
 or while running your Oracle, open a new terminal and run:
 
 ```
