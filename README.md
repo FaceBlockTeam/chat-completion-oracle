@@ -19,7 +19,7 @@ Make sure you have installed Node.js, npm and gathered all the items above.
 Now, clone the repository and install the dependencies:
 
 ```
-git clone https://github.com/FaceBlockai/chat-completion-oracle.git
+git clone https://github.com/FaceBlockteam/chat-completion-oracle.git
 cd chat-completion-oracle
 npm install
 ```
@@ -46,19 +46,19 @@ Save the contract address displayed on your terminal and go to the Oracle Config
 1. Configure your wallet (Metamask or similar) with FaceBlock AI Testnet configuration:
 ```
 Network Name: FaceBlock AI Testnet
-RPC Url: https://rpc-testnet.FaceBlockai.org
+RPC Url: https://rpc-testnet.FaceBlock.io
 Chain ID: 949888
 Currency symbol: TOR
-Block explorer URL: https://scan-testnet.FaceBlockai.org
+Block explorer URL: https://scan-testnet.FaceBlock.io
 ```
 
 2. Go to your favorite tool to deploy smart contracts such as https://remix.ethereum.org/
 
-3. Make sure you're on FaceBlock AI
+3. Make sure you're on FaceBlock PoAI
 
 4. Deploy the contract located in chat-completion-oracle/contracts/ChatCompletion.sol
 
-5. Verify it on https://scan-testnet.FaceBlockai.org
+5. Verify it on https://scan-testnet.FaceBlock.io
 
 ## Oracle Configuration
 
@@ -91,7 +91,7 @@ ts-node index.ts
 ## Testing
 
 To test your oracle, a Chat Completion request must be made on your smart contract.
-You can either interact with the requestCompletion method directly on https://scan-testnet.FaceBlockai.org
+You can either interact with the requestCompletion method directly on https://scan-testnet.FaceBlock.io
 or while running your Oracle, open a new terminal and run:
 
 ```
